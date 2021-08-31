@@ -38,10 +38,10 @@ server.post("/signup.html", function(req, res){
 
     const request=https.request(url,options,function(response){
        if(response.statusCode===200){
-           res.sendFile(__dirname+"/sub-pages/success.html");
+           res.sendFile(__dirname+"/success.html");
        } 
        else{
-        res.send("<h1>Uh oh !! Go back and try again or contact the developer</h1>");
+        res.send("<h1>Uh oh !! Go back and try again or contact the developer .</h1>");
        }
         response.on("data",function(data){
         });
@@ -53,9 +53,21 @@ server.post("/signup.html", function(req, res){
 // b33b22a1d986cad1b3751addc3e3b58f-us5
 
 // 02fd4c1a35
-server.post("/sub-pages/success.html",function(req, res){
+server.get("/success.html",function(req,res){
+res.sendFile(__dirname+"/success.html");
+});
+server.post("/success.html",function(req, res){
         res.redirect("/");
 });
+
+server.get("/sell.html",function(req, res){
+    res.sendFile(__dirname+"/sell.html");
+});
+
+server.get("/purchase.html",function(req, res){
+    res.sendFile(__dirname+"/purchase.html");
+});
+
 
 server.get("/",function(req, res){
     res.sendFile(__dirname+"/index.html");
@@ -66,5 +78,3 @@ server.get("/",function(req, res){
 server.listen(process.env.PORT || 3000, function(req, res){
     console.log("the server is running on port 3000 of project");
 });
-
-
