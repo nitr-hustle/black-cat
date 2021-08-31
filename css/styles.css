@@ -1,0 +1,193 @@
+#title{
+    background-color:gold;
+    color: white;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    font-family:"Montserrat";
+    
+}
+
+h1 {
+    font-family:"Montserrat";
+    font-weight: bolder;
+    font-size: 4rem;
+    line-height: 2;
+   
+}
+
+h2{
+    font-family:"Montserrat";
+    font-size: 2.5rem;
+    font-weight:bolder;
+}
+h3{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+p{
+ color:gray;
+ font-size: 1.2rem;
+}
+
+
+.container-padding{
+    padding: 3% 8% 5% 8%;
+}
+
+/* navigation bar  */
+.navbar{
+    padding-bottom: 4rem;
+}
+.navbar-brand{
+    font-family: "ubuntu";
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+
+}
+.nav-item{
+    padding: 0 1px;
+}
+.nav-link{
+font-size: 1rem;;
+font-family: "montserrat";
+}
+.navbar-logo{
+    width: 15%;
+    height: 15%;
+}
+/* downlaod button  */
+
+.download-btn{
+    margin: 2% 6% 6% 0;
+
+}
+
+/* title-image  */
+
+.title-image{
+    width: 90%;
+
+}
+
+
+/* features  */
+#features{
+    padding: 10% 6% 6% 4.5%;
+    text-align: center;
+    font-family: "montserrat-bold";
+}
+.feature-box{
+    padding: 4.5% 3%;
+}
+
+.icon{
+  width: 30%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+img:hover {
+    opacity:0.5;
+}
+
+/* testimonials  */
+#testimonials{
+    text-align: center;
+    background-color:#08d9d6 ;
+    color: white;
+   
+}
+
+.testimonials-images-1{
+    border-radius: 100%;
+    margin-top: 30px ;
+    width: 180px;
+}
+.testimonials-images-2{
+    border-radius: 100%;
+    margin-top: 60px ;
+    width: 210.5px;
+}
+.carousel-item{
+    padding: 5% 15%;
+}
+
+/* press  */
+#press{
+    background-color:#08d9d6 ;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.press-logo{
+    width: 15%;
+    margin: 20px 20px;
+}
+
+
+/* pricing  */
+#pricing{
+    padding: 5% 5%;
+    text-align: center;
+}
+.pricing-col{
+    padding: 5% 2%;
+}
+
+
+/* call to action  */
+#cta{
+    background-color:gold;
+    padding: 8% 20%;
+    text-align: center;
+}
+.cta-heading{
+    padding-bottom: 3%;
+}
+
+/* footer  */
+#footer{
+    padding: 6% 3%;
+    text-align: center;
+    font-family:  'Merriweather', serif;
+}
+
+.footer-link{
+    margin:15px;
+    color:#FFD523;
+    font-size: larger;
+    text-decoration: none;
+}
+.footer-para{
+    padding-top: 1%;
+}
+/* phone outlook  */
+@media  (max-width:900px)
+    {
+        #title{
+            text-align: center;
+        }
+        .title-image{
+            width: 85%;
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+       h1{
+           font-size: 2.5rem;
+           text-align: center;
+       }
+       .navbar-brand{
+           font-size: 20px;
+           
+       }
+        .navbar-logo{
+            width: 45px;
+            height: 45px;
+        }
+    
+    }
